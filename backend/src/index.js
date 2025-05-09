@@ -20,8 +20,9 @@ app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://chat-app-mern-new.onrender.com/",
-    credentials: true,
+  origin: ['https://chat-app-mern-new.onrender.com'],
+  credentials: true
+
   })
 );
 
